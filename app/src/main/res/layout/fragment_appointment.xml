@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentFragment">
+
+    <!-- RecyclerView for the table -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_times"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Guideline to separate the times from the data -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="41dp" />
+
+    <TextView
+        android:id="@+id/time_0000"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="00:00"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/time_0100"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_0100"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="01:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0000"
+        app:layout_constraintBottom_toTopOf="@+id/time_0200"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_0200"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="02:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0100"
+        app:layout_constraintBottom_toTopOf="@+id/time_0300"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_0300"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="03:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0200"
+        app:layout_constraintBottom_toTopOf="@+id/time_0400"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_0400"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="04:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0300"
+        app:layout_constraintBottom_toTopOf="@+id/time_0500"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_0500"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="05:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0400"
+        app:layout_constraintBottom_toTopOf="@+id/time_0600"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_0600"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="06:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0500"
+        app:layout_constraintBottom_toTopOf="@+id/time_0700"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_0700"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="07:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0600"
+        app:layout_constraintBottom_toTopOf="@+id/time_0800"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_0800"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="08:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0700"
+        app:layout_constraintBottom_toTopOf="@+id/time_0900"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_0900"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="09:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0800"
+        app:layout_constraintBottom_toTopOf="@+id/time_1000"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1000"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="10:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_0900"
+        app:layout_constraintBottom_toTopOf="@+id/time_1100"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1100"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="11:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1000"
+        app:layout_constraintBottom_toTopOf="@+id/time_1200"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1200"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="12:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1100"
+        app:layout_constraintBottom_toTopOf="@+id/time_1300"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1300"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="13:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1200"
+        app:layout_constraintBottom_toTopOf="@+id/time_1400"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1400"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="14:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1300"
+        app:layout_constraintBottom_toTopOf="@+id/time_1500"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1500"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="15:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1400"
+        app:layout_constraintBottom_toTopOf="@+id/time_1600"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1600"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="16:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1500"
+        app:layout_constraintBottom_toTopOf="@+id/time_1700"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1700"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="17:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1600"
+        app:layout_constraintBottom_toTopOf="@+id/time_1800"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1800"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="18:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1700"
+        app:layout_constraintBottom_toTopOf="@+id/time_1900"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_1900"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="19:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1800"
+        app:layout_constraintBottom_toTopOf="@+id/time_2000"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_2000"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="20:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_1900"
+        app:layout_constraintBottom_toTopOf="@+id/time_2100"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_2100"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="21:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_2000"
+        app:layout_constraintBottom_toTopOf="@+id/time_2200"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_2200"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="22:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_2100"
+        app:layout_constraintBottom_toTopOf="@+id/time_2300"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/time_2300"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="23:00"
+        app:layout_constraintTop_toBottomOf="@+id/time_2200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
