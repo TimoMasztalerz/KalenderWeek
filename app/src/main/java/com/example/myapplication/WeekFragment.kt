@@ -26,8 +26,8 @@ class WeekFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        findNavController().navigate(R.id.appointmentFragment)
-        Log.d("mainFragment", "Speichern Button geklickt!")
+        //findNavController().navigate(R.id.appointmentFragment)
+        //Log.d("mainFragment", "Speichern Button geklickt!")
     }
 }
 

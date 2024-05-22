@@ -8,10 +8,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="405dp"
+        android:layout_width="370dp"
         android:layout_height="556dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/mon" />
+            android:text="@string/mon"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tv_tuesday"
@@ -31,7 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/tue" />
+            android:text="@string/tue"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tv_wednesday"
@@ -39,7 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/wed" />
+            android:text="@string/wed"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tv_thursday"
@@ -47,7 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/thu" />
+            android:text="@string/thu"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tv_friday"
@@ -55,7 +59,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/fri" />
+            android:text="@string/fri"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tv_saturday"
@@ -63,7 +68,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/sat" />
+            android:text="@string/sat"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/tv_sunday"
@@ -71,7 +77,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/sun" />
+            android:text="@string/sun"
+            android:textColor="#000000" />
 
     </LinearLayout>
 
@@ -80,6 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/woche_21_52"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,6 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mai"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,6 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2024"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
