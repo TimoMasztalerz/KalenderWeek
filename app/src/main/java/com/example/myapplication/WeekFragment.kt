@@ -38,16 +38,16 @@ class WeekFragment : Fragment() {
             binding.root.findViewById<View>(id).setOnClickListener {
 
                 val selectedView = binding.root.findViewById<View>(id)
-                val selectedWeekday = selectedView.tag?.toString() ?: "nonono"
+                val selectedWeekday = selectedView.tag?.toString() ?: ""
 
                 Log.e("WeekFragment", "buttonPressed.")
 
 
-                    val bundle = Bundle()
-                    bundle.putString("weekday", selectedWeekday)
-                    findNavController().navigate(R.id.appointmentFragment)
-                }
-                }
+                val bundle = Bundle()
+                bundle.putString("weekday", selectedWeekday)
+                findNavController().navigate(R.id.appointmentFragment)
+            }
+        }
             }
         }
 

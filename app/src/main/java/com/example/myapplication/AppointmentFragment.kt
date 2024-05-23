@@ -21,14 +21,13 @@ class AppointmentFragment : Fragment() {
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Retrieve the selected weekday from the arguments bundle
-        val selectedWeekday = arguments?.getString("weekday").toString()
+        val selectedWeekday = arguments?.getString("weekday")
+        binding.tvwochentag.text = selectedWeekday ?: "Wochentag"
 
-        // Update the tvwochentag TextView with the selected weekday
-        binding.tvwochentag.text = selectedWeekday
         binding.buttonPlus.setOnClickListener {
             findNavController().navigate(R.id.createFragment)    }
 
