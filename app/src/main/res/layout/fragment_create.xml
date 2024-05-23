@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/desktop_wallpaper_pink_and_blue_background_fundos_de_cor_solida_fundo_de_aquarela_plain_aesthetic"
-    tools:context=".AppointmentFragment" >
+    android:background="@drawable/desktop_wallpaper_pink_and_blue_background_fundos_de_cor_solida_fundo_de_aquarela_plain_aesthetic">
+
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -20,59 +20,57 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <TextView
-        android:id="@+id/textView7"
+    <EditText
+        android:id="@+id/editTextText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hier termine anzeigen"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/terminbeschreibung"
         android:textColor="#159EB5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView8"
+    <EditText
+        android:id="@+id/editTextTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Heutige Termine :"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="@string/uhrzeit"
         android:textColor="#159EB5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wochentag"
-        android:textColor="#159EB5"
+        android:text="@string/termin_eintragen"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintVertical_bias="0.188" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="123dp"
-        android:layout_height="67dp"
-        android:backgroundTint="#4A201C1C"
-        android:shadowColor="#904646"
-        android:text="+"
-        android:textColorHighlight="#D37F7F"
-        android:textColorLink="#6F2020"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:iconTint="#431616"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4B159EB5"
+        android:text="Speichern"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:rippleColor="#994B4B"
-        app:strokeColor="#AB5C5C" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
 

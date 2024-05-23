@@ -25,9 +25,9 @@ class WeekFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+binding.tvMonday.setOnClickListener{findNavController().navigate(R.id.appointmentFragment)
 
-        //findNavController().navigate(R.id.appointmentFragment)
-        //Log.d("mainFragment", "Speichern Button geklickt!")
+        Log.d("WeekFragment", "Wochentag geklickt!")
     }
-}
+}}
 

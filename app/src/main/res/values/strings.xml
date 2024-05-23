@@ -3,6 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="woche_21_52">Woche 21/52</string>
+
     <string name="mon">Mon</string>
     <string name="tue">Tue</string>
     <string name="wed">Wed</string>
@@ -10,4 +11,62 @@
     <string name="fri">Fri</string>
     <string name="sat">Sat</string>
     <string name="sun">Sun</string>
+
+    <string name="time_00">00:00</string>
+    <string name="time_01">01:00</string>
+    <string name="time_02">02:00</string>
+    <string name="time_03">03:00</string>
+    <string name="time_04">04:00</string>
+    <string name="time_05">05:00</string>
+    <string name="time_06">06:00</string>
+    <string name="time_07">07:00</string>
+    <string name="time_08">08:00</string>
+    <string name="time_09">09:00</string>
+    <string name="time_10">10:00</string>
+    <string name="time_11">11:00</string>
+    <string name="time_12">12:00</string>
+    <string name="time_13">13:00</string>
+    <string name="time_14">14:00</string>
+    <string name="time_15">15:00</string>
+    <string name="time_16">16:00</string>
+    <string name="time_17">17:00</string>
+    <string name="time_18">18:00</string>
+    <string name="time_19">19:00</string>
+    <string name="time_20">20:00</string>
+    <string name="time_21">21:00</string>
+    <string name="time_22">22:00</string>
+    <string name="time_23">23:00</string>
+    <string name="terminbeschreibung">Terminbeschreibung</string>
+    <string name="uhrzeit">Uhrzeit</string>
+    <string name="termin_eintragen">Termin eintragen</string>
+
+
+    <string-array name="times">
+        <item>@string/time_00</item>
+        <item>@string/time_01</item>
+        <item>@string/time_02</item>
+        <item>@string/time_03</item>
+        <item>@string/time_04</item>
+        <item>@string/time_05</item>
+        <item>@string/time_06</item>
+        <item>@string/time_07</item>
+        <item>@string/time_08</item>
+        <item>@string/time_09</item>
+        <item>@string/time_10</item>
+        <item>@string/time_11</item>
+        <item>@string/time_12</item>
+        <item>@string/time_13</item>
+        <item>@string/time_14</item>
+        <item>@string/time_15</item>
+        <item>@string/time_16</item>
+        <item>@string/time_17</item>
+        <item>@string/time_18</item>
+        <item>@string/time_19</item>
+        <item>@string/time_20</item>
+        <item>@string/time_21</item>
+        <item>@string/time_22</item>
+        <item>@string/time_23</item>
+    </string-array>
+
+
 </resources>

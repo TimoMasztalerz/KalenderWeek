@@ -18,5 +18,15 @@
         android:id="@+id/appointmentFragment"
         android:name="com.example.myapplication.AppointmentFragment"
         android:label="fragment_appointment"
-        tools:layout="@layout/fragment_appointment" />
+        tools:layout="@layout/fragment_appointment" >
+        <action
+            android:id="@+id/action_appointmentFragment_to_createFragment"
+            app:destination="@id/createFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.example.myapplication.CreateFragment"
+        android:label="CreateFragment"
+        tools:layout="@layout/fragment_create"
+    />
 </navigation>
