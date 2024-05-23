@@ -26,7 +26,8 @@ class CreateFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.imageButton.setOnClickListener{findNavController().navigate(R.id.appointmentFragment)
+        binding.imageButton.setOnClickListener {
+            findNavController().navigate(R.id.appointmentFragment)
 
 
         }

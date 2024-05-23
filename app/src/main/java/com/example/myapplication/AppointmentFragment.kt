@@ -8,12 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.myapplication.databinding.FragmentAppointmentBinding
-import com.example.myapplication.databinding.FragmentWeekBinding
-
 
 class AppointmentFragment : Fragment() {
     private lateinit var binding: FragmentAppointmentBinding
-
 
 
     override fun onCreateView(
@@ -27,9 +24,14 @@ class AppointmentFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.button.setOnClickListener{findNavController().navigate(R.id.createFragment)
+        // Retrieve the selected weekday from the arguments bundle
+        val selectedWeekday = arguments?.getString("weekday").toString()
 
-            Log.d("WeekFragment", "Wochentag geklickt!")
-        }
-    }}
+        // Update the tvwochentag TextView with the selected weekday
+        binding.tvwochentag.text = selectedWeekday
+        binding.buttonPlus.setOnClickListener {
+            findNavController().navigate(R.id.createFragment)    }
+
+
+}}
 
