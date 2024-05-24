@@ -10,7 +10,7 @@
     android:padding="30dp">
 
     <TextView
-        android:id="@+id/textViewCannabisName"
+        android:id="@+id/textViewTime"
         android:layout_width="43dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -19,7 +19,7 @@
         tools:text="@string/time_16" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewTermin2"
         android:layout_width="152dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
