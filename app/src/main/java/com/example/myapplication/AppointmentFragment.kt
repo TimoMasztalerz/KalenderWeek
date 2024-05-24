@@ -47,9 +47,9 @@ class AppointmentFragment : Fragment() {
 
     private fun setupRecyclerView() {
         val appointments = listOf(
-            Appointment("1", "10:00"),
-            Appointment("2", "14:30"),
-            Appointment("3", "16:45")
+            Appointment("Turnen", "16:00","Montag"),
+            Appointment("Handwerker", "08:30","Dienstag"),
+            Appointment("Einladung Mama", "19:00","Freitag")
         )
         appointmentsAdapter = AppointmentAdapter(appointments)
         binding.appointmentRecyclerView.adapter = appointmentsAdapter

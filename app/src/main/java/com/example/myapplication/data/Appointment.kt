@@ -4,7 +4,8 @@ import java.util.Date
 
 class Appointment(
     val description: String,
-    val time: String
+    val time: String,
+    val wochentag:String
 )
 
 

@@ -33,7 +33,7 @@ class CreateFragment : Fragment() {
             findNavController().navigate(R.id.weekFragment)
             val description = binding.editTextText.text.toString()
             val time = binding.editTextTime.text.toString()
-            Datasource.singleData(Appointment( description = description, time = time))
+            Datasource.singleData(Appointment( description = description, time = time, wochentag = "Mo"))
         }
 
     }}
