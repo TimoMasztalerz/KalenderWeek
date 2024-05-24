@@ -4,13 +4,13 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="woche_21_52">Woche 21/52</string>
 
-    <string name="mon">Mon</string>
-    <string name="tue">Tue</string>
-    <string name="wed">Wed</string>
-    <string name="thu">Thu</string>
-    <string name="fri">Fri</string>
-    <string name="sat">Sat</string>
-    <string name="sun">Sun</string>
+    <string name="mon">Mo</string>
+    <string name="tue">Di</string>
+    <string name="wed">Mi</string>
+    <string name="thu">Do</string>
+    <string name="fri">Fr</string>
+    <string name="sat">Sa</string>
+    <string name="sun">So</string>
 
     <string name="time_00">00:00</string>
     <string name="time_01">01:00</string>
@@ -39,7 +39,17 @@
     <string name="terminbeschreibung">Terminbeschreibung</string>
     <string name="uhrzeit">Uhrzeit</string>
     <string name="termin_eintragen">Termin eintragen</string>
+    <string name="TerminPlatzhater">16:00 Turnen</string>
 
+    <string-array name="days">
+    <item>Montag</item>
+    <item>Dienstag</item>
+    <item>Mitwoch</item>
+    <item>Donnerstag</item>
+    <item>Freitag</item>
+    <item>Samstag</item>
+    <item>Sonntag</item>
+    </string-array>
 
     <string-array name="times">
         <item>@string/time_00</item>

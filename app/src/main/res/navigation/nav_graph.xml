@@ -4,29 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/weekFragment">
-
-    <fragment
-        android:id="@+id/weekFragment"
-        android:name="com.example.myapplication.WeekFragment"
-        android:label="WeekFragment"
-        tools:layout="@layout/fragment_week">
-        <action
-            android:id="@+id/action_weekFragment_to_appointmentFragment"
-            app:destination="@id/appointmentFragment" />
-    </fragment>
     <fragment
         android:id="@+id/appointmentFragment"
         android:name="com.example.myapplication.AppointmentFragment"
         android:label="fragment_appointment"
-        tools:layout="@layout/fragment_appointment" >
+        tools:layout="@layout/fragment_appointment">
+        <argument
+            android:name="weekday"
+            android:defaultValue="Mon"
+            app:argType="string" />
         <action
             android:id="@+id/action_appointmentFragment_to_createFragment"
             app:destination="@id/createFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/createFragment"
         android:name="com.example.myapplication.CreateFragment"
         android:label="CreateFragment"
-        tools:layout="@layout/fragment_create"
-    />
+        tools:layout="@layout/fragment_create">
+        <argument
+            android:name="time"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_createFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/weekFragment"
+        android:name="com.example.myapplication.WeekFragment"
+        android:label="WeekFragment">
+        <argument
+            android:name="time"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_weekFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment" />
+    </fragment>
 </navigation>

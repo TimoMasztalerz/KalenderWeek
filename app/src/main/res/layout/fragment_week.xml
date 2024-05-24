@@ -12,21 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/desktop_wallpaper_pink_and_blue_background_fundos_de_cor_solida_fundo_de_aquarela_plain_aesthetic"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="43dp"
-            android:layout_height="40dp"
-            android:backgroundTint="#00FFFFFF"
-            android:src="@android:drawable/ic_menu_revert"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.045"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textViewNextAppointment"
@@ -60,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dientag: 08:30 Handwerker"
-            android:textColor="#159EB5"
+            android:textColor="#BE2A8D"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -117,7 +108,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:background="#509034"
-            android:backgroundTint="#509034"
+            android:backgroundTint="#BE2A"
             android:gravity="center"
             android:text="@string/tue"
             android:textColor="#000000" />
@@ -176,7 +167,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/woche_21_52"
-        android:textColor="#000000"
+        android:textColor="#159EB5"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -190,7 +181,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mai 2024"
-        android:textColor="#000000"
+        android:textColor="#159EB5"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"

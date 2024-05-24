@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.myapplication.databinding.FragmentWeekBinding
 
@@ -34,21 +35,25 @@ class WeekFragment : Fragment() {
             R.id.tv_sunday
         )
 
+
         weekdays.forEach { id ->
+            val tv = binding.root.findViewById<TextView>(id)
+            val stringDays: String = tv.text.toString()
+            Log.e("weekday", stringDays)
             binding.root.findViewById<View>(id).setOnClickListener {
+                findNavController().navigate(
+                    WeekFragmentDirections.actionWeekFragmentToAppointmentFragment(
+                        stringDays
 
-                val selectedView = binding.root.findViewById<View>(id)
-                val selectedWeekday = selectedView.tag?.toString() ?: ""
-
-                Log.e("WeekFragment", "buttonPressed.")
+                    )
+                )
 
 
-                val bundle = Bundle()
-                bundle.putString("weekday", selectedWeekday)
-                findNavController().navigate(R.id.appointmentFragment)
+
+
             }
         }
-            }
-        }
+    }
+}
 
 
